@@ -215,53 +215,13 @@ select.addEventListener('change', function () {
 });
 
 // ---------------------- Projects GALLERY-------------------------- //
-  const modal = document.getElementById("projectModal");
-  const modalImg = document.getElementById("modalImage");
-  const closeModal = document.querySelector(".close");
-  const nextBtn = document.getElementById("nextBtn");
-  const prevBtn = document.getElementById("prevBtn");
-
-  //odděleno podle pořadí projektů
-  const projectImages = [
-    ["assets/images/D + R Appka/1 (1).png", "assets/images/D + R Appka/1 (2).png", "assets/images/D + R Appka/1 (3).png","assets/images/D + R Appka/1 (4).png", "assets/images/D + R Appka/1 (5).png","assets/images/D + R Appka/1 (6).png", "assets/images/D + R Appka/1 (7).png", "assets/images/D + R Appka/1 (8).png", "assets/images/D + R Appka/1 (9).png", "assets/images/D + R Appka/1 (10).png", "assets/images/D + R Appka/1 (11).png", "assets/images/D + R Appka/1 (12).png", "assets/images/D + R Appka/1 (13).png", "assets/images/D + R Appka/1 (14).png", "assets/images/D + R Appka/1 (15).png", "assets/images/D + R Appka/1 (16).png", "assets/images/D + R Appka/1 (17).png", "assets/images/D + R Appka/1 (18).png", "assets/images/D + R Appka/1 (19).png", "assets/images/D + R Appka/1 (20).png", "assets/images/D + R Appka/1 (21).png", "assets/images/D + R Appka/1 (22).png", "assets/images/D + R Appka/1 (23).png", "assets/images/D + R Appka/1 (24).png", "assets/images/D + R Appka/1 (25).png", "assets/images/D + R Appka/1 (26).png", "assets/images/D + R Appka/1 (27).png", "assets/images/D + R Appka/1 (28).png", "assets/images/D + R Appka/1 (29).png", "assets/images/D + R Appka/1 (30).png", "assets/images/D + R Appka/1 (31).png", "assets/images/D + R Appka/1 (32).png"],
-    ["assets/images/WEB 1/1 (1).png", "assets/images/WEB 1/1 (2).png", "assets/images/WEB 1/1 (3).png",  "assets/images/WEB 1/1 (4).png",  "assets/images/WEB 1/1 (5).png",  "assets/images/WEB 1/1 (6).png",  "assets/images/WEB 1/1 (7).png"],
-    ["assets/images/Konzolovka/1 (1).png", "assets/images/Konzolovka/1 (2).png", "assets/images/Konzolovka/1 (3).png", "assets/images/Konzolovka/1 (4).png", "assets/images/Konzolovka/1 (5).png", "assets/images/Konzolovka/1 (6).png", "assets/images/Konzolovka/1 (7).png"]
-  ];
-
-  let currentProject = 0;
-  let currentImageIndex = 0;
-
-  const projectLinks = document.querySelectorAll(".layer a");
-
-  projectLinks.forEach((link, index) => {
-    link.addEventListener("click", (e) => {
-      e.preventDefault();
-      currentProject = index;
-      currentImageIndex = 0;
-      modal.style.display = "block";
-      modalImg.src = projectImages[currentProject][currentImageIndex];
-    });
-  });
-
-  nextBtn.addEventListener("click", () => {
-    currentImageIndex = (currentImageIndex + 1) % projectImages[currentProject].length;
-    modalImg.src = projectImages[currentProject][currentImageIndex];
-  });
-
-  prevBtn.addEventListener("click", () => {
-    currentImageIndex = (currentImageIndex - 1 + projectImages[currentProject].length) % projectImages[currentProject].length;
-    modalImg.src = projectImages[currentProject][currentImageIndex];
-  });
-
-  closeModal.onclick = () => {
-    modal.style.display = "none";
-  };
-
-  window.onclick = (e) => {
-    if (e.target == modal) {
-      modal.style.display = "none";
-    }
-  };
+Fancybox.bind("[data-fancybox]", {
+  infinite: true,
+  Thumbs: { autoStart: true },
+  Toolbar: {
+    display: ["close", "counter", "fullscreen", "thumbs", "zoom", "download"],
+  },
+});
 
 
 

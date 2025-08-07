@@ -759,8 +759,20 @@ h3 i {
 
 
 /*---------------------------------------------Projekty-----------------------------------*/
-.projects{
-    padding: 50px 0;
+
+#projects {
+  padding: 60px 0;
+  min-height: 30vh; 
+  display: flex;
+  align-items: center;
+}
+
+.project{
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+	border: 1px solid var(--second-color);
+	width: 100%;
 }
 
 .container {
@@ -772,12 +784,6 @@ h3 i {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
     margin-top: 50px;
-}
-
-.project{
-    border-radius: 10px;
-    overflow: hidden;
-    position: relative;
 }
 
 .project img{
@@ -821,22 +827,30 @@ h3 i {
 	color: var(--color-white);
 }
 
-
 .layer a{
     text-decoration: none;
     color: var(--second-color);
     font-size: 18px;
     margin-top: 20px;
     line-height: 60px;
-    background: var(--body-color);
+    background: #f5f1f1;
     width: 60px;
     height: 60px;
     border-radius: 50%; 
     text-align: center;
+	transition: color 0.4s ease, transform 0.3s ease;
+	cursor: pointer;
+}
+
+
+.layer a:hover {
+    color: var(--text-color-second);
+    transform: scale(1.1);
+    background: #e2e2e2;
 }
 
 .layer i{
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .next {
@@ -844,116 +858,6 @@ h3 i {
 	margin-top: 4rem;
     font-size: 1.2rem;
 }
-
-/* ----- Modal GALLERIE ----- */
-
-/* Modal background */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 999;
-  padding-top: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
-  left: 5%;
-  top: 5%;
-  width: 90%;
-  height: 82%;
-  overflow: auto;
-  background-color: rgba(0,0,0,0.9);
-  border-radius: 20px;
-  box-shadow: 0 0 25px rgba(17, 168, 213, 0.8);
-}
-
-/* Modal content container */
-.modal-content {
-  position: relative;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 100%;
-  max-height: 100%;
-}
-
-/* Displayed image */
-.modal-content img {
-  max-width: 100%;
-  max-height: 100%;
-  display: block;
-  margin: auto;
-  border-radius: 8px;
-  box-shadow: 0 0 20px rgba(255,255,255,0.2);
-
-  transform: none !important;
-  transition: none !important;
-}
-
-/* Close button (X) */
-.close {
-  position: absolute;
-  top: 2px;
-  right: 10px;
-  color: white;
-  font-size: 40px;
-  font-weight: bold;
-  cursor: pointer;
-  z-index: 1000;
-}
-
-.close:hover,
-.close:focus {
-  color: #ff0000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-/* Arrow buttons */
-.modal-controls {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
-.modal-controls button {
-  background-color: transparent;
-  border: none;
-  color: #aaaaaa;
-  font-size: 48px;
-  cursor: pointer;
-  user-select: none;
-  transition: color 0.3s ease;
-}
-
-.modal-controls button:hover {
-  color: var(--second-color);
-}
-
-
-
-
-/* Responsivita pro menší zařízení */
-@media (max-width: 768px) {
-  #projectModal .modal-controls button {
-    font-size: 2.5rem;
-    padding: 8px 16px;
-  }
-
-  #projectModal #prevBtn {
-    left: 3vw;
-  }
-
-  #projectModal #nextBtn {
-    right: 3vw;
-  }
-}
-
-
 
 /* ----- CONTACT ----- */
 
