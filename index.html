@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="cs-CZ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- --------- UNICONS ---------- -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- --------- CSS ---------- -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css">
+
+    <!-- --------- FAVICON ---------- -->
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+
+    <title>Moje Portfolio | Bělohlávek</title>
+</head>
+<body>
+
+    <!-- --------------- HEADER --------------- -->
+    <nav id="header">
+        <div class="nav-logo">
+            <a href="#" class="nav-name">Jan</a>
+            <span>.</span>
+        </div>
+        <div class="nav-menu" id="myNavMenu">
+            <ul class="nav_menu_list">
+                <li class="nav_list">
+                    <a href="#home" class="nav-link">Home</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#about" class="nav-link">O mě</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                   <a href="#education" class="nav-link">Moje Cesta</a>
+                   <div class="circle"></div>
+               </li>
+                <li class="nav_list">
+                    <a href="#skills" class="nav-link">Dovednosti</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#projects" class="nav-link">Projekty</a>
+                    <div class="circle"></div>
+                </li>
+                <li class="nav_list">
+                    <a href="#contact" class="nav-link">Kontakt</a>
+                    <div class="circle"></div>
+                </li>
+                <span class="active-nav"></span>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <a href="assets/images/CV -Bělohlávek Jan.pdf"  class="btn" download>Stáhnout CV <i class="uil uil-file-download-alt"></i></a>
+        </div>
+        <div class="nav-menu-btn">
+            <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+
+    <!-- -------------- MAIN ---------------- -->
+    <main class="wrapper">
+
+        <!-- -------------- FEATURED BOX (HOME) ---------------- -->
+        <section class="featured-box" id="home">
+            <div class="featured-text">
+                <div class="featured-text-card">
+                    <span>Jan Bělohlávek</span>
+                </div>
+                <div class="featured-name">
+                    <p>Já jsem <span class="typedText"></span></p>
+                </div>
+                <div class="featured-text-info">
+                    <p>Vytvářím moderní webové aplikace s důrazem na kvalitu a funkčnost, které propojují backendové i frontendové technologie s uživatelsky přívětivým rozhraním. 
+                        Neustále rozšiřuji své znalosti, abych mohl přinášet inovativní řešení a efektivně podporovat růst projektů.
+                    </p>
+                </div>
+                <div class="featured-text-btn">
+                    <a href="#contact" class="btn blue-btn">Kontaktuj mě <i class="uil uil-message"></i></a>
+                    <a href="assets/images/CV -Bělohlávek Jan.pdf"  class="btn" download>Stáhnout CV <i class="uil uil-file-download-alt"></i></a>
+                </div>
+                <div class="social_icons">
+                    <a href="https://github.com/ArascainX" target="_blank" class="icon">
+                    <i class="uil uil-github-alt"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jan-bělohlávek-05259b348" target="_blank" class="icon">
+                        <i class="uil uil-linkedin-alt"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="featured-image">
+                <div class="image">
+                    <picture>
+                        <source srcset="assets/images/avatar2.png" media="(max-width: 1024px)">
+                        <img src="assets/images/avatar.png" alt="avatar" />
+                    </picture>
+                </div>
+            </div>
+
+            <div class="scroll-icon-box">
+                <a href="#about" class="scroll-btn">
+                    <i class="uil uil-mouse-alt"></i>
+                    <p>Scrolluj dolů</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- -------------- ABOUT ---------------- -->
+        <section class="section" id="about">
+            <h2 class="heading"> O <span> mě </span></h2>
+
+            <div class="about-img">
+                <img src="assets/images/Me.png" alt="Me">
+                <span class="circle-spin"></span>
+            </div>
+
+            <div class="about-container">
+                <h3>Tohle jsem já</h3>
+                <p>Začínající programátor specializující se na vývoj webových aplikací.
+                    Mám praktické zkušenosti s technologiemi Python, Django, Django REST API, React a JavaScript.
+                    Úspěšně jsem absolvoval odborné kurzy zaměřené na Python, webový vývoj a moderní frontendové frameworky.
+                    Aktivně rozšiřuji své znalosti a hledám příležitosti pro zapojení do profesionálních projektů.
+                    Jsem motivovaný přispívat k vývoji kvalitních a efektivních softwarových řešení.
+                    Aktivně rozvíjím své dovednosti a hledám příležitost získat praxi v reálných projektech.
+                </p>
+                <div class="btn-box btns">
+                    <a href="#" class="btn">Zjisti více</a>
+                </div>    
+            </div>
+        </section>
+
+        <!-- -------------- My Journey--------------- -->
+        <section class="education" id="education">
+
+            <h2 class="heading">Moje <span>cesta</span></h2>
+            
+            <div class="education-row">
+                <div class="education-column">
+                    <h3 class="title">Cesta</h3>
+
+                    <div class="education-box">
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class="uil uil-calendar-alt"></i>2017 - 2024</div>
+                                <h3>Cesta policisty české republiky</h3>
+                                <p>Má cesta u Policie České republiky trvala sedm let, během níž jsem  si vybudoval pevné základy v analytickém myšlení,
+                                    důslednosti a schopnosti rychle a efektivně rozhodovat i pod tlakem. 
+                                    Vedl jsem náročná vyšetřování, koordinoval týmy a aktivně spolupracoval s různými institucemi. 
+                                    Tyto zkušenosti mě naučily odpovědnosti, systematickému přístupu a efektivní komunikaci. 
+                                    Všechny tyto dovednosti nyní úspěšně uplatňuji v oblasti IT, kde se naplno věnuji vývoji webových aplikací a tvorbě webových stárnek.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class="uil uil-calendar-alt"></i>2024 - 2025</div>
+                                <h3>Cesta programátora</h3>
+                                <p>Po sedmi letech služby u Policie České republiky jsem se rozhodl pro zásadní životní změnu
+                                    a vydal se na novou cestu - stát se programátorem. Svět IT mě vždy přitahoval svou logikou, kreativními možnostmi
+                                    a využíváním moderních technologií. Právě proto jsem se rozhodl věnovat programování naplno. 
+                                    Tato změna mi dává smysl, naplňuje mě a umožňuje mi růst v oblasti, která mě skutečně motivuje.
+                                    </p>
+                            </div>
+                        </div>
+
+                        <div class="education-content">
+                            <div class="content">
+                                <div class="year"><i class="uil uil-calendar-alt"></i>2024 - 2025</div>
+                                <h3>Dokončené kurzy</h3>
+                                <p>Kurz programátora webových aplikací Python a Python PRO jsem úspěšně dokončil u společnosti ITNetwork s.r.o.
+                                    Během těchto kurzů jsem získal všechny své certifikáty, 
+                                    které mi poskytly komplexní vzdělání a praktické zkušenosti v oblasti webového vývoje.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-column">
+                    <h3 class="title">Zkušenosti</h3>
+
+                    <div class="education-box">
+                        <div class="education-content">
+                            <div class="content-X">
+                                <div class="year"><i class="uil uil-calendar-alt"></i>2024 - 2025</div>
+                                <h3>Certifikáty</h3>
+                                <p>Získal jsem více než 15 certifikátů v technologiích, 
+                                    jako jsou Python, Django, React, JavaScript a další, které mě připravily na profesionální cestu pro práci v IT.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="education-content">
+                            <div class="content-X">
+                                <div class="year"><i class="uil uil-calendar-alt"></i>2024 - 2025</div>
+                                <h3>Všechny své certifikáty mám k dispozici zde <i class="uil uil-arrow-down"></i></h3>
+
+                                <div class="certificates-container">
+
+                                <!-- Galerie certifikátů - zobrazí se nad 1600px -->
+                                <div class="certificates-gallery-scroll">
+                                    <div class="galleries-container">
+                                    <div class="gallery-wrapper">
+                                        <a data-fancybox="gallery" href="assets/images/Certyfikáty/Python 1/Python Basic 1.png">
+                                        <img src="assets/images/Certyfikáty/Python 1/Python Basic 1.png" alt="Certifikát 1" />
+                                        </a>
+                                        <a data-fancybox="gallery" href="assets/images/Certyfikáty/Python 1/Python Basic 2.png">
+                                        <img src="assets/images/Certyfikáty/Python 1/Python Basic 2.png" alt="Certifikát 2" />
+                                        </a>
+                                        <a data-fancybox="gallery" href="assets/images/Certyfikáty/Python 2/Python PRO 1.png">
+                                        <img src="assets/images/Certyfikáty/Python 2/Python PRO 1.png" alt="Certifikát 3" />
+                                        </a>
+                                        <a data-fancybox="gallery" href="assets/images/Certyfikáty/Python 2/Python PRO 2.png">
+                                        <img src="assets/images/Certyfikáty/Python 2/Python PRO 2.png" alt="Certifikát 4" />
+                                        </a>
+                                    </div>
+                                    <div class="gallery-wrapper-X">
+                                        <a data-fancybox="gallery" href="assets/images/Certyfikáty/Zakladni_konstrukce_jazyka_Python.png">
+                                        <img src="assets/images/Certyfikáty/Zakladni_konstrukce_jazyka_Python.png" alt="Certifikát 5" />
+                                        </a>
+                                        <a data-fancybox="gallery" href="assets/images/Certyfikáty/Objektove_orientovane_programovani_v_Pythonu.png">
+                                        <img src="assets/images/Certyfikáty/Objektove_orientovane_programovani_v_Pythonu.png" alt="Certifikát 6" />
+                                        </a>
+                                        <a data-fancybox="gallery" href="assets/images/Certyfikáty/Kolekce_v_Pythonu.png">
+                                        <img src="assets/images/Certyfikáty/Kolekce_v_Pythonu.png" alt="Certifikát 7" />
+                                        </a>
+                                        <a data-fancybox="gallery" href="assets/images/Certyfikáty/Zaklady_Django_frameworku_pro_Python.png">
+                                        <img src="assets/images/Certyfikáty/Zaklady_Django_frameworku_pro_Python.png" alt="Certifikát 8" />
+                                        </a>
+                                        <a data-fancybox="gallery" href="assets/images/Certyfikáty/REST_API_v_Django.png">
+                                        <img src="assets/images/Certyfikáty/REST_API_v_Django.png" alt="Certifikát 9" />
+                                        </a>
+                                        <a data-fancybox="gallery" href="assets/images/Certyfikáty/Zakladni_konstrukce_jazyka_JavaScript.png">
+                                        <img src="assets/images/Certyfikáty/Zakladni_konstrukce_jazyka_JavaScript.png" alt="Certifikát 10" />
+                                        </a>
+                                        <a data-fancybox="gallery" href="assets/images/Certyfikáty/Certifikat_Zaklady_React-1.png">
+                                        <img src="assets/images/Certyfikáty/Certifikat_Zaklady_React-1.png" alt="Certifikát 11" />
+                                        </a>
+                                        <a data-fancybox="gallery" href="assets/images/Certyfikáty/REST_API_klient_v_React.png">
+                                        <img src="assets/images/Certyfikáty/REST_API_klient_v_React.png" alt="Certifikát 12" />
+                                        </a>
+                                        <a data-fancybox="gallery" href="assets/images/Certyfikáty/Moderni_webdesign.png">
+                                        <img src="assets/images/Certyfikáty/Moderni_webdesign.png" alt="Certifikát 13" />
+                                        </a>
+                                        <a data-fancybox="gallery" href="assets/images/Certyfikáty/NumPy.png">
+                                        <img src="assets/images/Certyfikáty/NumPy.png" alt="Certifikát 14" />
+                                        </a>
+                                        <a data-fancybox="gallery" href="assets/images/Certyfikáty/Pandas -Vizualizace_dat_v_Pythonu.png">
+                                        <img src="assets/images/Certyfikáty/Pandas -Vizualizace_dat_v_Pythonu.png" alt="Certifikát 15" />
+                                        </a>
+                                        <a data-fancybox="gallery" href="assets/images/Certyfikáty/Git.png">
+                                        <img src="assets/images/Certyfikáty/Git.png" alt="Certifikát 16" />
+                                        </a>
+                                        <a data-fancybox="gallery" href="assets/images/Certyfikáty/SQLite_databaze.png">
+                                        <img src="assets/images/Certyfikáty/SQLite_databaze.png" alt="Certifikát 17" />
+                                        </a>
+                                        <a data-fancybox="gallery" href="assets/images/Certyfikáty/Best_practices_pro_navrh_softwaru.png">
+                                        <img src="assets/images/Certyfikáty/Best_practices_pro_navrh_softwaru.png" alt="Certifikát 18" />
+                                        </a>
+                                    </div>
+                                    </div> <!-- end galleries-container -->
+                                </div> <!-- end certificates-gallery-scroll -->
+
+                                <!-- Roletka pro zobrazení certifikátů na menších obrazovkách -->
+                                <div class="certificates-dropdown">
+                                    <select id="certificateSelect">
+                                        <option value="">Vyber certifikát</option>
+                                        <option value="assets/images/Certyfikáty/Python 1/Python Basic 1.png">Python Basic 1</option>
+                                        <option value="assets/images/Certyfikáty/Python 1/Python Basic 2.png">Python Basic 2</option>
+                                        <option value="assets/images/Certyfikáty/Python 2/Python PRO 1.png">Python PRO 1</option>
+                                        <option value="assets/images/Certyfikáty/Python 2/Python PRO 2.png">Python PRO 2</option>
+                                        <option value="assets/images/Certyfikáty/Zakladni_konstrukce_jazyka_Python.png">Základy Pythonu</option>
+                                        <option value="assets/images/Certyfikáty/Objektove_orientovane_programovani_v_Pythonu.png">OOP v Pythonu</option>
+                                        <option value="assets/images/Certyfikáty/Kolekce_v_Pythonu.png">Kolekce v Pythonu</option>
+                                        <option value="assets/images/Certyfikáty/Zaklady_Django_frameworku_pro_Python.png">Django základy</option>
+                                        <option value="assets/images/Certyfikáty/REST_API_v_Django.png">REST API v Djangu</option>
+                                        <option value="assets/images/Certyfikáty/Zakladni_konstrukce_jazyka_JavaScript.png">Základy JavaScriptu</option>
+                                        <option value="assets/images/Certyfikáty/Certifikat_Zaklady_React-1.png">Základy React</option>
+                                        <option value="assets/images/Certyfikáty/REST_API_klient_v_React.png">REST API klient v React</option>
+                                        <option value="assets/images/Certyfikáty/Moderni_webdesign.png">Moderní webdesign</option>
+                                        <option value="assets/images/Certyfikáty/NumPy.png">NumPy</option>
+                                        <option value="assets/images/Certyfikáty/Pandas -Vizualizace_dat_v_Pythonu.png">Pandas vizualizace</option>
+                                        <option value="assets/images/Certyfikáty/Git.png">Git</option>
+                                        <option value="assets/images/Certyfikáty/SQLite_databaze.png">SQLite</option>
+                                        <option value="assets/images/Certyfikáty/Best_practices_pro_navrh_softwaru.png">Best practices</option>
+                                    </select>
+                                    <div id="selectedCertificate"></div>
+                                </div> <!-- end certificates-dropdown -->
+
+                                </div> <!-- end certificates-container -->
+                            </div> <!-- end content-X -->
+                            </div> <!-- end education-content -->
+
+                        
+                        <div class="education-content">
+                            <div class="content-X">
+                                <div class="year"><i class="uil uil-calendar-alt"></i>2024 - 2025</div>
+                                <h3>Co jsem se naučil</h3>
+                                <p>Během svých kurzů jsem získal pevné základy a praktické dovednosti v několika klíčových oblastech webového vývoje.
+                                    Naučil jsem se programovat v Pythonu s důrazem na OOP, pracovat s knihovnami Pandas a NumPy pro datovou analýzu, 
+                                    vytvářet webové aplikace pomocí frameworku Django a jeho rozšíření Django REST API. 
+                                    Dále jsem si osvojil frontendové technologie, včetně Reactu, JavaScriptu, HTML5 a CSS, 
+                                    a zvládnul jsem správu verzí pomocí Git a práci s databázemi SQLite. 
+                                    Tyto znalosti mi umožňují komplexně vyvíjet moderní webové aplikace a řešit různé programátorské výzvy.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- -------------- SKILLS ---------------- -->
+
+        <section class="skills" id="skills">
+            <h2 class="heading">Mé programátorské <span>dovednosti</span></h2>
+
+            <div class="skills-row">
+                <div class="skills-column-L">
+                    <h3 class="title">FRONTEND</h3>
+
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <div class="progress">
+                                <h3>HTML <span>80%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>CSS <span>90%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>JavaScript <span>70%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>React <span>70%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-column-R">
+                    <h3 class="title">BACKEND</h3>
+
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <div class="progress">
+                                <h3>Python <span>90%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>Django <span>65%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>Django REST API <span>70%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                            <div class="progress">
+                                <h3>Node.js <span>55%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-column-D">
+                    <h3 class="title">DATABASE</h3>
+
+                    <div class="skills-box">
+                        <div class="skills-content">
+                            <div class="progress">
+                                <h3>SQLite <span>60%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>MonoDB <span>55%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+
+                            <div class="progress">
+                                <h3>GIT <span>80%</span></h3>
+                                <div class="bar"><span></span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- -------------- PROJECTS ---------------- -->
+        <section id="projects">
+            <div class="projects" id="projects">
+                <div class="container">
+                    <h1 class="heading">Moje <span>Portfolio</span></h1>
+                    <div class="projects-list">
+                        <div class="project">
+                            <img src="assets/images/project-1.png" alt="project1">
+                            <div class="layer">
+                                <h3>Social media App</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+                                <a href="#"><i class="uil uil-ellipsis-h"></i></a>
+                                <div id="projectModal" class="modal">
+                                    <span class="close">&times;</span>
+                                    <div class="modal-content">
+                                        <img id="modalImage" src="" alt="project image">
+                                        <div class="modal-controls">
+                                        <button id="prevBtn">&#10094;</button>
+                                        <button id="nextBtn">&#10095;</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <img src="assets/images/project-2.png" alt="project2">
+                            <div class="layer">
+                                <h3>Hudba App</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+                                <a href="#"><i class="uil uil-ellipsis-h"></i></a>
+                                <div id="projectModal" class="modal">
+                                    <span class="close">&times;</span>
+                                    <div class="modal-content">
+                                        <img id="modalImage" src="" alt="project image">
+                                        <div class="modal-controls">
+                                        <button id="prevBtn">&#10094;</button>
+                                        <button id="nextBtn">&#10095;</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project">
+                            <img src="assets/images/project-3.png" alt="project3">
+                            <div class="layer">
+                                <h3>Obchodní app</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatibus.</p>
+                                <a href="#"><i class="uil uil-ellipsis-h"></i></a>
+                                  <div id="projectModal" class="modal">
+                                    <span class="close">&times;</span>
+                                    <div class="modal-content">
+                                        <img id="modalImage" src="" alt="project image">
+                                        <div class="modal-controls">
+                                        <button id="prevBtn">&#10094;</button>
+                                        <button id="nextBtn">&#10095;</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="next"> 
+                        <a href="#" class="btn"> Další </a>
+                    </div>
+                </div>
+            </div> 
+        </section>
+
+        <!-- -------------- CONTACT ---------------- -->
+
+        <section class="contact" id="contact">
+            <h2 class="heading">Email <span>box</span></h2>
+
+            <div class="row contact-wrapper">
+                <!-- Levý sloupec s kontaktními informacemi -->
+                <div class="col">
+                    <div class="contact-info">
+                        <h2> Kontaktuj mě!<i class="uil uil-corner-right-down"></i></h2>
+                        <p> <i class="uil uil-envelope-alt"></i> Email: belohlavek.jan98@seznam.cz</p>
+                        <p><i class="uil uil-phone-alt"></i> Tel.: +420 722 634 403</p>
+                        <div class="social_icons_contact">
+                              <a href="https://github.com/ArascainX" target="_blank" class="icon">
+                                <i class="uil uil-github-alt"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/jan-bělohlávek-05259b348" target="_blank" class="icon">
+                                <i class="uil uil-linkedin-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pravý sloupec s formulářem -->
+                <div class="col">
+                <form action="https://formspree.io/f/mldlpzoo" method="POST">
+                    <div class="input-box">
+                        <div class="input-field">
+                        <input type="text" name="name" placeholder="Celé jméno" required />
+                        <span class="focus"></span>
+                        </div>
+                        <div class="input-field">
+                        <input type="email" name="email" placeholder="E-mail" required />
+                        <span class="focus"></span>
+                        </div>
+                    </div>
+
+                    <div class="input-box">
+                        <div class="input-field">
+                        <input type="tel" name="phone" placeholder="Telefonní číslo" required />
+                        <span class="focus"></span>
+                        </div>
+                        <div class="input-field">
+                        <input type="text" name="subject" placeholder="Předmět" required />
+                        <span class="focus"></span>
+                        </div>
+                    </div>
+
+                    <div class="textarea-field">
+                        <textarea name="message" cols="30" rows="4" placeholder="Zpráva..." required></textarea>
+                        <span class="focus"></span>
+                    </div>
+
+                    <div class="btn-box btns">
+                        <button type="submit" class="btn">
+                        <i class="uil uil-message"></i> Odeslat
+                        </button>
+                    </div>
+                    </form>
+                <!-- SEND MESSAGE -->
+                    <div class="alert-toast" id="alertToast"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- --------------- FOOTER --------------- -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2025 by Bělohlávek Jan</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#"><i class="uil uil-arrow-up"></i></a>
+        </div>
+    </footer>
+   
+
+    <!-- ----- TYPING JS Link ----- -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- ----- SCROLL REVEAL JS Link----- -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- ----- MAIN JS ----- -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Fancybox JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+</body>
+</html>
