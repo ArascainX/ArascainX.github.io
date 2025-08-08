@@ -2311,6 +2311,81 @@ h3 i {
 
 }
 
+@media only screen and (max-width: 340px) {
+
+	.featured-image {
+		width: 100%;
+		order: 1;
+		min-height: 80px;
+		justify-content: center;
+		margin-bottom: 15px;
+	}
+
+	.featured-name p  {
+		font-size: 25px;
+	}
+
+	.featured-name p .typedText {
+		font-size: 25px;
+	}
+
+	.featured-text-info p{
+		font-size: 12px;
+	}
+
+	.image, .image img {
+		width: 150px; 
+		height: 150px;
+	}
+
+	.contact-info p {
+		font-size: 12px;
+	}
+
+	.skills-column-L,
+	.skills-column-R,
+	.skills-column-D {
+		width: 100%;
+		padding-left: 0.5rem;
+		padding-right: 6.7rem;
+	}
+
+	.layer h3 {
+		font-size: 1.2rem;
+		margin-bottom: 10px;
+	}
+
+	.layer p {
+		font-size: 0.8rem; 
+		line-height: 1.2rem;
+	}
+
+	.layer a {
+		font-size: 40px;
+		width: 35px; 
+		height: 35px;
+		line-height: 25px;
+	}
+
+	.layer i {
+		font-size: 25px;
+	}
+
+	.contact-info p {
+		font-size: 11px;
+	}
+
+	.contact-info p > i,
+	.contact-info i {
+		font-size: 17px;
+	}
+
+	.social_icons_contact .icon {
+		font-size: 17px;
+	}
+
+}
+
 
 
 
