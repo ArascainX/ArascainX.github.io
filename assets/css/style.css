@@ -790,6 +790,7 @@ h3 i {
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
+	object-fit: cover;
 }
 
 .project:hover img{
@@ -1233,9 +1234,32 @@ h3 i {
 }
 
 
-/* ----- MEDIA QUERY == 1600px / RESPONSIVE ----- */
+/* ----- MEDIA QUERY == 1620px / RESPONSIVE ----- */
+@media screen and (min-width: 1620px) {
 
-@media (min-width: 1600px) {
+	.layer h3 {
+		font-size: 1.5rem;
+		margin-bottom: 10px;
+	}
+
+	.layer p {
+		font-size: 1rem; 
+		line-height: 1.2rem;
+	}
+
+	.layer a {
+		font-size: 40px;
+		width: 50px; 
+		height: 50px;
+		line-height: 45px;
+	}
+
+	.layer i {
+		font-size: 30px; /* původně 35px */
+	}
+}
+
+@media screen and (min-width: 1600px) {
 	
   .certificates-gallery-scroll {
 	display: block;
@@ -1301,8 +1325,28 @@ h3 i {
 		font-size: 15px;
 	}
 
-}
+	.layer h3 {
+		font-size: 1.5rem;
+		margin-bottom: 10px;
+	}
 
+	.layer p {
+		font-size: 1rem; 
+		line-height: 1.2rem;
+	}
+
+	.layer a {
+		font-size: 40px;
+		width: 50px; 
+		height: 50px;
+		line-height: 45px;
+	}
+
+	.layer i {
+		font-size: 30px; /* původně 35px */
+	}
+
+}
 /* ----- MEDIA QUERY == 1300px / RESPONSIVE ----- */
 @media screen and (max-width: 1300px) {
 
@@ -1338,26 +1382,29 @@ h3 i {
 		margin-bottom: 1rem;
 	}
 	
+
+
 	.layer h3 {
-		font-size: 1.5rem;
+		font-size: 1.2rem;
 		margin-bottom: 10px;
 	}
 
 	.layer p {
-		font-size: 0.8rem; 
+		font-size: 0.9rem; 
 		line-height: 1.2rem;
 	}
 
 	.layer a {
-		font-size: 40px;
+		font-size: 35px;
 		width: 50px; 
 		height: 50px;
 		line-height: 45px;
 	}
 
 	.layer i {
-		font-size: 30px; /* původně 35px */
+		font-size: 25px; /* původně 35px */
 	}
+
 
 }
 
@@ -1845,7 +1892,7 @@ h3 i {
 		font-size: 15px
 	}
 
-		.layer h3 {
+	.layer h3 {
 		font-size: 1.5rem;
 		margin-bottom: 10px;
 	}
@@ -1867,10 +1914,34 @@ h3 i {
 	}
 }
 
+/* ----- MEDIA QUERY == 800px / RESPONSIVE ----- */
+
+@media screen and (max-width: 800px) {
+	.layer h3 {
+		font-size: 1.2rem;
+		margin-bottom: 10px;
+	}
+
+	.layer p {
+		font-size: 0.8rem; 
+		line-height: 1.1rem;
+	}
+
+	.layer a {
+		font-size: 30px;
+		width: 50px; 
+		height: 50px;
+		line-height: 45px;
+	}
+
+	.layer i {
+		font-size: 25px; 
+	}
+}
 
 /* ----- MEDIA QUERY == 770px / RESPONSIVE ----- */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
 
 	body, html {
 	overflow-x: hidden;
