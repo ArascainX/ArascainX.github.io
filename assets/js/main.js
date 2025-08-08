@@ -141,7 +141,7 @@ ScrollReveal({
 });
 
 sr.reveal('.skills-column-D', { delay: 100 })
-sr.reveal('.btn-box', { delay: 200 })
+sr.reveal('.btn-box', { delay: 100 })
 
 /*------------------ SEND ---------------------------*/ 
 

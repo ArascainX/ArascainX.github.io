@@ -311,7 +311,8 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    padding-block: 5em;
+    padding-block: 1rem;
+	padding-bottom: 6rem;
 }
 
 .heading {
@@ -383,18 +384,15 @@ span {
 }
 
 /* ----- EDUCATION + JOURNEY----- */
+
 .education{
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	min-height: auto;
-	padding-bottom: 10rem;
+	padding-bottom: 8rem;
 	color: var(--text-color-second);
-}
-
-.education .heading {
-	margin-top: 100px;
 }
 
 .education .education-row{
@@ -489,6 +487,7 @@ span {
 h3 i {
 	font-size: 24px;
 }
+
 .education-content .content-X::before {
 	content: '';
 	position: absolute;
@@ -598,7 +597,7 @@ h3 i {
 }
 
 .skills .heading {
-	padding: 70px 0 20px 0;
+  padding-top: 6rem;
 }
 
 
@@ -923,11 +922,15 @@ h3 i {
 }
 
 .contact-info p > i {
-  font-size: 35px;
+  font-size: 25px;
 }
 
 .contact-info i {
   font-size: 35px;
+}
+
+.contact-info h2 i.uil-corner-right-down {
+	transform: translateY(10px); 
 }
 
 .contact-info::after {
@@ -1389,7 +1392,7 @@ h3 i {
 
 	.nav-menu {
 		position: fixed;
-		top: 70px;
+		top: 50px;
 		left: -100%;
 		display: flex;
 		flex-direction: column;
@@ -1551,86 +1554,54 @@ h3 i {
 
 /* ----- MEDIA QUERY == 540px / RESPONSIVE ----- */
 
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 500px) {
 
-	.image, .image img {
-		width: 250px;
-		height: 250px;
+  /* ---------- NAVIGACE ---------- */
+	nav {
+		height: 50px;
 	}
 
-	.about-container p {
-		padding: 1rem;
-		font-size: 0.9rem;
-		text-align: center;
-		margin-left: 1rem;
-		margin-right: 1rem;
-	}
-	
-	.btn-box.btns {
-		width: 100%;
+	.nav-logo {
 		display: flex;
-		justify-content: center;
+		align-items: center;
 	}
 
-	.featured-name {
-		font-size: 40px;
+	.nav-name {
+		font-size: 25px;
 	}
 
-	.form-inputs{
-		flex-direction: column;
-	}
-
-	.input-field{
-		width: 100%;
+	.nav-logo span {
+		font-size: 45px;
+		line-height: 1.5;
+		transform: translateX(-5px);
 	}
 
 	.nav-link {
 		font-size: 1rem;
 	}
 
-	.projects-list {
-		grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-	}
-	
-	.scroll-icon-box {
-		display: none;
-	}
-
-	.skills-column-L,
-	.skills-column-R,
-	.skills-column-D {
-		width: 100%;
-		padding-left: 1rem;
-		padding-right: 1rem;
-	}
-
-	nav {
-		height: 70px;
-	}
-
+  /* ---------- ÚVODNÍ SEKCE (HOME) ---------- */
 	.featured-image {
 		width: 100%;
 		order: 1;
-		min-height: 50px;
+		min-height: 80px;
 		justify-content: center;
-		margin-top: 10px;
+		margin-top: 35px;
 	}
 
-	.featured-text-btn {
-		display: flex;
-		gap: 10px; 
-		flex-wrap: wrap; 
+	.image, .image img {
+		width: 210px; 
+		height: 210px;
 	}
 
-	.featured-text-btn .btn {
-		flex: 1; 
-		min-width: 120px; 
-		padding: 8px 12px;
-		font-size: 14px;
+	.featured-name {
+		font-size: 40px;
+		margin-top: 0.8rem;
+		margin-bottom: 0.8rem;
 	}
 
 	.featured-name p {
-		font-size: 1.7rem;
+		font-size: 1.5rem;
 	}
 
 	.typedText {
@@ -1641,53 +1612,178 @@ h3 i {
 		font-size: 14px;
 	}
 
-
-	.image, .image img{
-		width: 150px;
-		height: 150px;
+	.featured-text-btn {
+		justify-content: flex-start;
+		flex-wrap: wrap;
+		gap: 10px;
 	}
 
-	.about-container p {
-		text-align: justify;
+	.featured-text-btn .btn {
+		flex: none;
+		min-width: 120px;
+		padding: 0.5rem 0.8rem;
+		font-size: 0.8rem;
 	}
 
-	.about-img {
-		width: 180px;
-		height: 180px;
-		
+	.featured-text-btn .btn i {
+		font-size: 0.9rem;
+	}
+
+	.scroll-icon-box {
+		display: none;
+	}
+
+  /* ---------- ABOUT SECTION ---------- */
+
+	#about {
+		margin-bottom: 8rem;
+	}
+
+	#about .heading {
+		margin-top: 4rem;  
+		font-size: 2.2rem;
 	}
 
 	.about-container h3 {
 		font-size: 1.7rem;
+		margin-top: -0.8rem;    
+		margin-bottom: -2rem;
+		text-align: center;
 	}
 
-	.contact-wrapper {
-		flex-direction: column;
-		gap: 2rem;
+	.about-container p {
+		padding: 1rem;
+		font-size: 0.9rem;
+		text-align: justify;
+		margin-left: 1rem;
+		margin-right: 1rem;
 	}
 
-	.col,
-	.contact-wrapper .contact-info,
-	.contact-wrapper form {
+	.about-img {
+		width: 200px;
+		height: 200px;
+	}
+
+	.btn-box.btns {
 		width: 100%;
-		flex: 1 1 100%;
-	}
-
-	.contact form .input-box {
-		flex-direction: column;
-	}
-
-	.contact form .input-box .input-field {
-		width: 100%;
-	}
-
-	.contact form .btn-box {
+		display: flex;
 		justify-content: center;
+		margin-top: -0.8rem;
+	}
+
+  /* ---------- MOJE CESTA ---------- */
+
+	.education-column .title {
+		font-size: 1.6rem;   
+		margin-left: 2.5rem;   
+	}
+
+	section.education > .heading {
+		display: inline-block; 
+	}
+
+	section.education {
+		padding-top: 3rem;  
+		padding-bottom: 0.5rem; 
+	}
+
+  	.education-column .education-box {
+		margin-left: 0.6rem;     
+	}
+
+	.education-box .education-content {
+		padding-left: 1.5rem;    
+	}
+
+
+  .education-box .education-content::before {        
+		left: -0.7rem;       
+		width: 1.3rem;      
+		height: 1.3rem;      
+	}
+
+  .education-box .education-content-X::before {
+		left: -0.7rem;
+		width: 1.3rem;
+		height: 1.3rem;
+	}
+
+  .education .heading {
+		font-size: 35px;
+		margin-top: 2rem;
+		margin-bottom: 3rem;
+  	}
+
+
+  /* ---------- DOVEDNOSTI ---------- */
+	.skills .heading {
+		font-size: 35px;
+		margin-top: 2rem;
+		margin-bottom: 4rem;
+	}
+
+  /* ---------- PROJEKTY ---------- */
+	.projects-list {
+		grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+		gap: 20px;
+	}
+
+		/* 1) Posun sekce Projects nahoru */
+	#projects {
+		padding-top: 20px; /* původně 60px */
+		margin-top: -20px; /* dodatečný posun celé sekce nahoru */
+	}
+
+	/* Posun i samotného nadpisu */
+	#projects .heading {
+		margin-top: 0.5rem; /* místo nad nadpisem */
+		margin-bottom: 1rem;
+	}
+
+	/* 2) Menší hover vrstva */
+	.layer h3 {
+		font-size: 1.5rem;
+		margin-bottom: 10px;
+	}
+
+	.layer p {
+		font-size: 0.8rem; /* původně ~20px */
+		line-height: 1.2rem;
+	}
+
+	.layer a {
+		font-size: 40px; /* ikona uvnitř menší */
+		width: 50px; /* původně 60px */
+		height: 50px;
+		line-height: 45px;
+	}
+
+	.layer i {
+		font-size: 30px; /* původně 35px */
+	}
+
+  /* ---------- KONTAKT ---------- */
+/*---------- Info kontakt -------*/
+
+  	.contact .heading {
+    	margin-bottom: 6rem; 
+		margin-top: 3rem;
 	}
 
 	.contact form .btn-box .btn {
-		font-size: 1rem;
-		padding: 0.6rem 1rem;
+		margin-top: 0.6rem;
+	}
+
+	.contact-info h2 i.uil-corner-right-down {
+		transform: translateY(6px); 
+	}
+
+	.contact form .btn-box .btn i.uil-message {
+		font-size: 20px;
+	}
+
+	.contact-info p {
+		font-size: 14px;
 	}
 
 	.contact-info p > i,
@@ -1699,17 +1795,71 @@ h3 i {
 		font-size: 24px;
 	}
 
-	.social_icons_contact a.icon {
-		font-size: 24px;
+	.social_icons_contact a.icon i {
+		 font-size: 18px; 
+	}
+ /*---------- FORM -------*/
+
+	.input-box {
+	display: flex;
+	flex-direction: column;
+	gap: 0.1rem; /* malá mezera mezi inputy */
 	}
 
-	.heading {
-		font-size: 35px;
-		margin-top: 2rem;
-		margin-bottom: 4rem;
+	.contact form .input-box .input-field {
+	width: 100%;
+	margin-top: 0.1rem;
 	}
+
+	.contact form .input-box .input-field input,
+	.contact form .textarea-field textarea {
+		font-size: 0.9rem;
+		padding: 8px; 
+		border-width: 0.15rem; 
+		border-radius: 0.4rem; 
+	}
+
+	.contact form .textarea-field textarea {
+		font-size: 0.9rem;
+		padding: 8px;
+		border-width: 0.15rem;
+		border-radius: 0.4rem;
+	}
+	
+	.contact form .btn-box .btn {
+		font-size: 1rem;
+		padding: 0.4rem 1.2rem;
+		border-radius: 0.4rem;
+		margin-bottom: 8px;
+	}
+
+  /* ---------- FOOTER ---------- */
+
+  .footer { 
+    row-gap: 10px;
+    padding-block: 15px;
+  }
+
+  .footer-text {
+    font-size: 0.8rem; /* zmenšené písmo */
+  }
+
+  .footer-iconTop {
+    align-self: flex-end;
+    margin-right: 1rem; /* posun více doprava */
+  }
+
+  .footer-iconTop a {
+    padding: 0.2rem; /* zmenšené tlačítko */
+    border-width: 2px;
+  }
+
+  .footer-iconTop a i {
+    font-size: 1.6rem; /* menší ikona */
+  }
 
 }
+
 
 @media only screen and (max-width: 420px) {
 
