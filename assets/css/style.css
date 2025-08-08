@@ -1314,8 +1314,42 @@ h3 i {
 	height: 420px;
   }
 
+    /* ---------- PROJEKTY ---------- */
+	#projects .heading {
+		margin-top: 0.5rem; 
+		margin-bottom: 1rem;
+	}
+	
+	.layer h3 {
+		font-size: 1.5rem;
+		margin-bottom: 10px;
+	}
+
+	.layer p {
+		font-size: 0.8rem; 
+		line-height: 1.2rem;
+	}
+
+	.layer a {
+		font-size: 40px;
+		width: 50px; 
+		height: 50px;
+		line-height: 45px;
+	}
+
+	.layer i {
+		font-size: 30px; /* původně 35px */
+	}
+
 }
 
+@media (max-width: 1280px) {
+	
+	.projects-list {
+		grid-template-columns: repeat(auto-fit, minmax(clamp(400px, 45%, 250px), 1fr));
+		gap: 20px;
+	}
+}
 /* ----- MEDIA QUERY == 1200px / RESPONSIVE ----- */
 @media (max-width: 1200px) {
 
@@ -1586,12 +1620,12 @@ h3 i {
 		order: 1;
 		min-height: 80px;
 		justify-content: center;
-		margin-top: 35px;
+		margin: 30px;
 	}
 
 	.image, .image img {
-		width: 210px; 
-		height: 210px;
+		width: 200px; 
+		height: 200px;
 	}
 
 	.featured-name {
@@ -1668,7 +1702,7 @@ h3 i {
 		width: 100%;
 		display: flex;
 		justify-content: center;
-		margin-top: -0.8rem;
+		margin-top: -0.7rem;
 	}
 
   /* ---------- MOJE CESTA ---------- */
@@ -1716,7 +1750,7 @@ h3 i {
 
 
   /* ---------- DOVEDNOSTI ---------- */
-	.skills .heading {
+	.skills.heading {
 		font-size: 35px;
 		margin-top: 2rem;
 		margin-bottom: 4rem;
@@ -1724,36 +1758,35 @@ h3 i {
 
   /* ---------- PROJEKTY ---------- */
 	.projects-list {
-		grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+		grid-template-columns: 1fr;
 		gap: 20px;
 	}
 
-		/* 1) Posun sekce Projects nahoru */
 	#projects {
-		padding-top: 20px; /* původně 60px */
-		margin-top: -20px; /* dodatečný posun celé sekce nahoru */
+		padding-top: 20px; 
+		margin-top: -20px; 
 	}
 
-	/* Posun i samotného nadpisu */
+	
 	#projects .heading {
-		margin-top: 0.5rem; /* místo nad nadpisem */
+		margin-top: 0.5rem; 
 		margin-bottom: 1rem;
 	}
 
-	/* 2) Menší hover vrstva */
+	
 	.layer h3 {
 		font-size: 1.5rem;
 		margin-bottom: 10px;
 	}
 
 	.layer p {
-		font-size: 0.8rem; /* původně ~20px */
+		font-size: 0.8rem; 
 		line-height: 1.2rem;
 	}
 
 	.layer a {
-		font-size: 40px; /* ikona uvnitř menší */
-		width: 50px; /* původně 60px */
+		font-size: 40px;
+		width: 50px; 
 		height: 50px;
 		line-height: 45px;
 	}
@@ -1860,8 +1893,22 @@ h3 i {
 
 }
 
+@media only screen and (max-width: 430px) {
 
-@media only screen and (max-width: 420px) {
+	.featured-image {
+		width: 100%;
+		order: 1;
+		min-height: 80px;
+		justify-content: center;
+		margin: 0 auto;
+		margin-top: 50px;
+		margin-bottom: -20px;
+	}
+
+	.image, .image img {
+		width: 350px; 
+		height: 350px;
+	}
 
 	.skills-column-L,
 	.skills-column-R,
@@ -1872,7 +1919,24 @@ h3 i {
 	}
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 414px) {
+
+	.featured-image {
+		width: 100%;
+		order: 1;
+		min-height: 80px;
+		justify-content: center;
+		margin: 0 auto;
+		margin-top: 50px;
+		margin-bottom: -20px;
+	}
+
+	.image, .image img {
+		width: 320px; 
+		height: 320px;
+	}
+
+
 	.skills-column-L,
 	.skills-column-R,
 	.skills-column-D {
@@ -1881,6 +1945,7 @@ h3 i {
 		padding-right: 3rem;
 	}
 }
+
 
 @media only screen and (max-width: 380px) {
 	.skills-column-L,
@@ -1893,12 +1958,30 @@ h3 i {
 }
 
 @media only screen and (max-width: 375px) {
+
+	.featured-image {
+		width: 100%;
+		order: 1;
+		min-height: 80px;
+		justify-content: center;
+		margin-bottom: 15px;
+	}
+
+	.image, .image img {
+		width: 220px; 
+		height: 220px;
+	}
+
+	.contact-info p {
+		font-size: 12px;
+	}
+
 	.skills-column-L,
 	.skills-column-R,
 	.skills-column-D {
 		width: 100%;
 		padding-left: 1rem;
-		padding-right: 4rem;
+		padding-right: 5rem;
 	}
 
 }
