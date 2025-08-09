@@ -224,6 +224,17 @@ Fancybox.bind("[data-fancybox]", {
 });
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".bar").forEach(bar => {
+      const value = bar.getAttribute("data-value");
+      const span = bar.querySelector("span");
+      setTimeout(() => {
+          span.style.width = value + "%";
+      }, 200);
+  });
+});
+
+
 
 
 

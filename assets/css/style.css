@@ -687,8 +687,28 @@ h3 i {
 .skills-content .progress h3 {
 	font-size: 1rem; 
 	display: flex;
-	justify-content: space-between;
 	font-weight: 600;
+}
+
+.progress h3 span {
+  margin-left: auto;
+  font-weight: bold;
+}
+
+.progress h3 {
+  display: flex;
+  gap: 0.8em; 
+  font-weight: normal;
+}
+
+.progress h3 i {
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.4em; 
+}
+
+.progress h3 i + i {
+  margin-left: 0.5rem; 
 }
 
 .skills-content .progress .bar {
@@ -731,11 +751,11 @@ h3 i {
 }
 
 .skills-column-R:nth-child(2) .skills-content .progress:nth-child(2) .bar span {
-	width: 65%;
+	width: 70%;
 }
 
 .skills-column-R:nth-child(2) .skills-content .progress:nth-child(3) .bar span {
-	width: 70%;
+	width: 65%;
 }
 
 .skills-column-R:nth-child(2) .skills-content .progress:nth-child(4) .bar span {
@@ -755,7 +775,6 @@ h3 i {
 .skills-column-D:nth-child(3) .skills-content .progress:nth-child(3) .bar span {
 	width: 80%;
 }
-
 
 /*---------------------------------------------Projekty-----------------------------------*/
 
